@@ -2,7 +2,7 @@
 Automatically downloads chaturbate streams with youtube-dl
 
 # Requirements
-Python 3, python-requests, youtube-dl, GNU screen
+Python 3, python-requests, youtube-dl, GNU screen, pgrep
 
 # Usage
 1) Add the CB profiles you want to the array
