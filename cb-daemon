@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+
+import requests, subprocess, time
+
+base_link = "https://chaturbate.com/"
+
+cb_profiles = [
+"goldengoddessxxx/",
+"lana_rain/",
+"not_your_waifu/",
+"sexy_b0rsch/",
+"terror_candy/",
+"tricky_nymph/"
+]
+
+while True:
+
+    for profile in cb_profiles:
+
+        room = base_link + profile
+        html = requests.get(room).text
+
+        if not "Room is currently offline" in html:
+
+            if not subprocess.call(["pgrep", "-f", room], stdout=subprocess.DEVNULL) == 0:
+
+                subprocess.Popen(["screen", "-d", "-m", "youtube-dl", room])
+
+    time.sleep(30)
