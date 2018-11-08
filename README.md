@@ -1,5 +1,5 @@
 # chaturbate-daemon
-Automatically downloads chaturbate streams with youtube-dl
+Extremely simple daemon that automaticlaly downloads chaturbate streams with youtube-dl
 
 # Requirements
 Python 3, python-requests, youtube-dl, GNU screen, pgrep
